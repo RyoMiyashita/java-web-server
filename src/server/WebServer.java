@@ -17,6 +17,7 @@ public class WebServer {
     private static final AtomicBoolean isTerminate = new AtomicBoolean(false);
 
     public static void main(final String [] args) throws IOException {
+        System.out.println("hi!");
         Runtime.getRuntime().addShutdownHook(new Thread(
                 WebServer::shutdown
         ));
