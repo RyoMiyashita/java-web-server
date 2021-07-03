@@ -1,3 +1,5 @@
+package echoServer;
+
 import java.io.*;
 import java.net.Socket;
 
