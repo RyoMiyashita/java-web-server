@@ -9,7 +9,7 @@ public class WebServer {
 
     public static void main(final String [] args) throws IOException {
         try (ServerSocket serverSocket = new ServerSocket()) {
-            serverSocket.bind(new InetSocketAddress(1230));
+            serverSocket.bind(new InetSocketAddress(12345));
 
             while (true) {
                 Socket socket = serverSocket.accept();
